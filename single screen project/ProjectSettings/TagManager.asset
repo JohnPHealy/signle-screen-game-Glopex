@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - player
-  - 
+  - background
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: interactable
     uniqueID: 4099438065
+    locked: 0
+  - name: walls
+    uniqueID: 3611116531
+    locked: 0
+  - name: player
+    uniqueID: 893916559
     locked: 0

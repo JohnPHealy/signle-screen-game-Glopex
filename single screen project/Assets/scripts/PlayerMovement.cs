@@ -14,14 +14,24 @@ public class PlayerMovement : MonoBehaviour
     private float moveDir;
     private Rigidbody2D myRB;
     private bool canJump;
+    private SpriteRenderer mysprite;
 
     private void Start()
     {
         myRB = GetComponent<Rigidbody2D>();
+        mysprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void FixedUpdate()
     {
+        if (moveDir>0)
+        {
+            mysprite.flipX = false;
+        }
+        if(moveDir<0)
+        {
+        mysprite.flipX = true;
+        }
         var moveAxis = Vector3.right * moveDir;
 
         if (Mathf.Abs(myRB.velocity.x) < maxSpeed)
