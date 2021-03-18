@@ -18,6 +18,6 @@ public class checkpoint_script : MonoBehaviour
     }
     void gotoCP()
     {
-    transform.position = new Vector2(CPX, CPY);
+    transform.position = new Vector3(CPX, CPY, -0.29f);
     }
 }
