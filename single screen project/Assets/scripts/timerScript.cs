@@ -29,7 +29,7 @@ public class timerScript : MonoBehaviour
         string minutes = ((int)t/60).ToString();
         string seconds = (t%60).ToString("f0");
         timerText.color = Color.magenta;
-            timerText.text = minutes +":"+seconds;
+            timerText.text = seconds + "/13";
         }
         else{
         t += Time.deltaTime;
@@ -43,7 +43,7 @@ public class timerScript : MonoBehaviour
             timerText.color = Color.red;
         
         
-        timerText.text = minutes +":"+seconds;
+        timerText.text = seconds + "/13";
         
         if(t>=13)
         {

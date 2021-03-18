@@ -47,8 +47,14 @@ TagManager:
   - name: interactable
     uniqueID: 4099438065
     locked: 0
+  - name: aura
+    uniqueID: 214259133
+    locked: 0
   - name: walls
     uniqueID: 3611116531
+    locked: 0
+  - name: plant
+    uniqueID: 3451720893
     locked: 0
   - name: player
     uniqueID: 893916559
